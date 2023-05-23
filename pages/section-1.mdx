@@ -1,0 +1,43 @@
+---
+1.1  The Python programming language
+---
+
+The programming language you will learn is Python. Python is an example of a **high-level language**; other high-level languages you might have heard of are C, C++, Perl, and Java.
+
+There are also **low-level languages**, sometimes referred to as “machine languages” or “assembly languages.” Loosely speaking, computers can only run programs written in low-level languages. So programs written in a high-level language have to be processed before they can run. This extra processing takes some time, which is a small disadvantage of high-level languages.
+
+The advantages are enormous. First, it is much easier to program in a high-level language. Programs written in a high-level language take less time to write, they are shorter and easier to read, and they are more likely to be correct. Second, high-level languages are **portable**, meaning that they can run on different kinds of computers with few or no modifications. Low-level programs can run on only one kind of computer and have to be rewritten to run on another.
+
+Due to these advantages, almost all programs are written in high-level languages. Low-level languages are used only for a few specialized applications.
+
+Two kinds of programs process high-level languages into low-level languages: **interpreters** and **compilers**. An interpreter reads a high-level program and executes it, meaning that it does what the program says. It processes the program a little at a time, alternately reading lines and performing computations. Figure [1.1](#figure1.1) shows the structure of an interpreter.
+
+---
+<div id="figure1.1">
+    > ![Image Description](https://www.greenteapress.com/thinkpython/html/thinkpython001.png)
+</div>
+> Figure 1.1: An interpreter processes the program a little at a time, <br /> alternately reading lines and performing computations.
+---
+
+A compiler reads the program and translates it completely before the program starts running. In this context, the high-level program is called the **source code**, and the translated program is called the **object code** or the **executable**. Once a program is compiled, you can execute it repeatedly without further translation. Figure [1.2](#figure1.2) shows the structure of a compiler.
+
+---
+<div id="figure1.2">
+    > ![Image Description](https://www.greenteapress.com/thinkpython/html/thinkpython002.png)
+</div>
+> Figure 1.2: A compiler translates source code into object code, which is run by a hardware executor.
+---
+Python is considered an interpreted language because Python programs are executed by an interpreter. There are two ways to use the interpreter: interactive mode and script mode. In interactive mode, you type Python programs and the interpreter displays the result:
+
+<div>
+  <iframe src="https://trinket.io/embed/console/52413a762e" width="50%" height="100" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+
+
+The chevron, `>>>`, is the **prompt** the interpreter uses to indicate that it is ready. If you type `1 + 1`, the interpreter replies `2`.
+
+Alternatively, you can store code in a file and use the interpreter to execute the contents of the file, which is called a **script**. By convention, Python scripts have names that end with `.py`.
+
+To execute the script, you have to tell the interpreter the name of the file. If you have a script named `dinsdale.py` and you are working in a UNIX command window, you type python `dinsdale.py`. In other development environments, the details of executing scripts are different. You can find instructions for your environment at the Python website [http://python.org](http://python.org).
+
+Working in interactive mode is convenient for testing small pieces of code because you can type and execute them immediately. But for anything more than a few lines, you should save your code as a script so you can modify and execute it in the future.
